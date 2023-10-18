@@ -5,8 +5,8 @@ import {
 import { Game } from '../modules/games/entities/Game';
 import { User } from '../modules/users/entities/User';
 
-import { UsersRepository } from '../modules/users/repositories/implementations/UsersRepository';
 import { GamesRepository } from '../modules/games/repositories/implementations/GamesRepository';
+import { UsersRepository } from '../modules/users/repositories/implementations/UsersRepository';
 
 const usersSeed: User[] = [
   {
@@ -105,10 +105,10 @@ describe('Repositories', () => {
           title: 'Rocket League',
         }),
         expect.objectContaining({
-          title: 'Need For Speed: Most Wanted',
+          title: 'The Last Of Us',
         }),
         expect.objectContaining({
-          title: 'The Last Of Us',
+          title: 'Need For Speed: Most Wanted',
         }),
       ],
     });
